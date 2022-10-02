@@ -1,0 +1,171 @@
+body{
+    font-family: 'Poppins', serif;
+}
+
+img{
+	width: 100%;
+}
+.radio{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	margin-right: 40px;
+}
+.login {
+    height: 1000px;
+    width: 100%;
+    background: radial-gradient(#052665, #2155CD);
+    position: relative;
+}
+.login_box {
+    width: 1050px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+  
+}
+.login_box .right{
+  width: 59%;
+  height: 100%  
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	display: flex;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    background: #052665;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(5,38,101,255, 1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(5,38,101,255, 1);
+    box-shadow: 0px 9px 15px -11px rgba(5,38,101,255, 1);
+}
+
+.submit:hover {
+	transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #052665;
+}
+
+.right {
+	background: linear-gradient(212.38deg, rgba(5, 38, 101, 0.8) 0%, rgba(29, 163, 197, 0.6) 100%),url('images/webclinic_banner.jpg');
+	color: #fff;
+	position: relative;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right .right-text{
+    height: 100%;
+    position: relative;
+    transform: translate(0%, 45%);
+}
+.right-text h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+.right-text h5{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+.form-input{
+	box-shadow: inset #abacaf 0 0 0 2px;
+	border: 0;
+	background: rgba(0, 0, 0, 0);
+	appearance: none;
+	width: 100%;
+	position: relative;
+	border-radius: 3px;
+	padding: 9px 12px;
+	line-height: 1.4;
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	font-weight: 400;
+	height: 40px;
+	transition: all .2s ease;             
+}
+
+.form-input:hover{
+   box-shadow: 0 0 0 0 #fff inset, #79DAE8 0 0 0 2px;          
+}
+
+.form-input:focus{
+    background: #fff;
+	outline: 0;
+	box-shadow: 0 0 0 0 #fff inset, #79DAE8 0 0 0 3px;         
+}
+
+.box{
+	width: 50%;
+	text-align: center;
+	justify-content: center;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding: 30px;
+}

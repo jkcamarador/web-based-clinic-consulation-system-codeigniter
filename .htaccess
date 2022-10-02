@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /projects/WEB-BASED_CLINIC_CONSULTATION_SYSTEM/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

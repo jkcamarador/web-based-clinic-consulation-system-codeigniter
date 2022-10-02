@@ -1,0 +1,427 @@
+html{
+	scroll-behavior:smooth;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Poppins', serif;
+	margin:0;
+	padding: 0;
+	background-color: #F2F3F5;
+}
+
+.userinfobody {
+	background-color: #f6f7fc;
+}
+
+.login-button {
+	margin-right: 10px;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 3px;
+	padding: 12px 24px;
+	border: 0;
+	color: #000021;
+	background: #79DAE8;
+	line-height: 1.15;
+	font-size: 16px;                                    
+}
+
+.login-button:hover {
+	transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #79DAE8;
+}
+
+/*HOME PAGE CCS*/
+
+.indexbody {
+	font-family: 'Poppins', serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #eee;
+}
+
+.box {
+	gap: 30px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.misvis {
+	text-align: center;
+	width: 30%;
+	height: 300px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;
+	color: #252525;
+	margin-bottom: 30px;
+}
+
+.header {
+	height: 100vh;
+	background-image: 
+	linear-gradient(to right bottom, 
+	rgba(5, 38, 101, 0.6),
+	rgba(29, 163, 197, 0.5)),
+	url('images/webclinic_banner.jpg');
+
+	background-size: cover;
+	background-position: top;
+	position: relative;
+
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.heading-primary {
+	color: #fff;
+	text-transform: uppercase;
+
+	backface-visibility: hidden;
+	margin-bottom: 30px;
+}
+
+.heading-primary-main {
+	display: block;
+	font-size: 26px;
+	font-weight: 400;
+	letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: inline-block;
+	border-radius: 100px;
+	transition: all .2s;
+	position: relative;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+	background-color: #fff;
+	color: #777;
+	font-size: 14px;
+}
+
+/*USER HOME CCS*/
+
+.header1 {
+	z-index: 1;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	font-family: 'Nunito', sans-serif;
+	overflow: hidden;
+	background-color: #052665;
+	padding: 12px 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+}
+
+.header1 a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header1 img {
+  float: left;
+  margin-left: 10px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header1 a.logo {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.header1 a.logo:hover {
+  color: white;
+}
+
+.header1 a:hover {
+  color: #f9ee8e;
+}
+
+.header1 a.active {
+  color: #f9ee8e;
+}
+
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header1 a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+} 	
+
+.table-container{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding: 20px;
+	width: 70%;
+}
+
+/*FOOTER*/
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #353a41;
+   color: white;
+   padding: 30px 20px;
+   display:flex; 
+   gap:80px;
+   justify-content: center;
+   align-items: center;
+}
+
+.chart {
+  width: 50%; 
+  height: 550px;
+
+  box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	background: #fff;
+	padding: 10px 15px;
+}
+
+/*PERSONAL INFO CCS*/
+
+.form-container{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 90px;
+	margin-bottom: 10px;
+	padding: 20px;
+	width: 35%;
+}
+
+.form-control-container{
+	width: 100%;
+	display: flex;
+	gap: 30px;
+}
+
+.form-control {
+	box-sizing: border-box;
+	border: none;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	height: 54px;
+	background: #fff;
+	width: 100%;
+}
+
+.submit {
+	border: none;
+	padding: 15px 10px;
+	border-radius: 4px;
+	display: block;
+	margin-top: 5px;
+	background: #052665;
+	color: #fff;
+	font-weight: bold;
+	-webkit-box-shadow: 0px 9px 15px -11px rgba(5,38,101,255, 1);
+	-moz-box-shadow: 0px 9px 15px -11px rgba(5,38,101,255, 1);
+	box-shadow: 0px 9px 15px -11px rgba(5,38,101,255, 1);
+	width: 170px;
+}
+
+.submit:hover {
+	transition: all .1s ease;
+	box-shadow: 0 0 0 0 #fff, 0 0 0 2px #052665;
+}
+
+.vl {
+  border-left: 1px solid gray;
+  height: 120px;
+}
+
+/*CONSULTATION CCS*/
+
+.form-container-consult{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	width: 70%;
+}
+
+.form-control-container-consult{
+	width: 100%;
+	display: flex;
+	gap: 30px;
+}
+
+.text-container{
+	display: flex;
+	gap: 50px;
+  box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	background: #fff;
+	padding: 10px 15px;
+}
+
+.notif-container{
+	padding: 5px 0px;
+	padding-right: 10px;
+	display: flex;
+	align-items: center;
+	gap: 17px;
+	border-top: 1px solid #BEBEBE;
+}
+
+.notif-container:hover{
+	background-color: #d8e1f2;
+}
+
+.unread {
+	background-color: #fae5e3;
+	
+}
+
+/*ADMIN HOME*/
+
+.table-admin-container{
+
+	padding: 20px;
+	border-radius: 15px;
+	background: #fff;
+	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #F2F3F5;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*  notif*/
+
+.icon-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #333333;
+  background: #dddddd;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.icon-button:hover {
+  cursor: pointer;
+}
+
+.icon-button__badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
