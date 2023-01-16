@@ -1,4 +1,4 @@
-CRUD website system for clinic consultation requests using CodeIgniter as a web framework.
+CRUD web based system for clinic consultation requests using CodeIgniter as a web framework.
 
 ###################
 What is CodeIgniter
